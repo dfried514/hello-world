@@ -3,10 +3,10 @@ import logo from './logo.svg'
 import './App.css'
 
 function App() {
-  const x = 10;
  const myDiv = React.createElement('div',null,"YOYOYO")
   return (
     <div className="App">
+    <div />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
