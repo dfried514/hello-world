@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "babel-loader": "^7.1.5",
     "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
     "eslint-plugin-react": "^7.19.0",
     "jsx-control-statements": "^3.2.8",
     "react": "^16.13.1",
@@ -46,8 +46,19 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
     "babel-eslint": "^10.1.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "husky": "^4.2.5"
+    "husky": "^4.2.5",
+    "jest-dom": "^4.0.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    },
+    "transform": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/fileTransformer.js",
+      "^.+\\.jsx?$": "babel-jest"
+    }
   }
 }
