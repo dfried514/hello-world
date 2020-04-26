@@ -3,10 +3,8 @@ import logo from './logo.svg'
 import './App.css'
 
 function App() {
- const myDiv = React.createElement('div',null,"YOYOYO")
   return (
     <div className="App">
-    <div />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -20,10 +18,8 @@ function App() {
         >
           Learn React
         </a>
-        {myDiv}
       </header>
     </div>
   )
 }
-
 export default App

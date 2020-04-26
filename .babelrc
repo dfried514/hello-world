@@ -4,6 +4,6 @@
     "@babel/preset-react"
   ],
   "plugins": [
-    "jsx-control-statements"
+    "module:jsx-control-statements"
   ]
 }

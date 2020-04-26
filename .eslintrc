@@ -1,13 +1,14 @@
 {
   "parser": "babel-eslint",
 
-  "extends": [
-    "eslint:recommended",
-    "plugin:react/recommended"
-  ],
-
   "plugins": [
     "react"
+  ],
+
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
 
   "parserOptions": {
@@ -35,7 +36,13 @@
 	"rules": {
 		"semi": [2, "never"],
     "react/jsx-indent": [2, 2],
-    "react/jsx-indent-props": [2, 2]
+    "react/jsx-indent-props": [2, 2],
+    "arrow-parens": "off",
+    "comma-dangle": "off",
+    "function-paren-newline": "off",
+    "max-len": [1, 120],
+    "no-param-reassign": "off",
+    "react/require-default-props": "off"
 	}
 }
 
